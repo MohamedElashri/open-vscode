@@ -1,2 +1,3 @@
 # open-vscode
- Run upstream VS Code on a remote machine with access through a modern web browser from any device, anywhere. 
+
+This is my fork of open-vscode by gitpod which intended to provide build for `arm64`
