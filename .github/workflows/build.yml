@@ -1,11 +1,7 @@
 name: Build vscode-gitpod & Push to Dockerhub
 
 on:
-  push:
-    branches: [ main ]
   workflow_dispatch:
-  
-  
 jobs:
   build:
 
