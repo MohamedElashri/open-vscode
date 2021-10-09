@@ -10,9 +10,9 @@ COPY extensions/*.vsix /home/
 
 #mkdir for each extension
 #Don't forget to change $version
-RUN mkdir /home/openvscode-server-nightly-v1.61.0-linux-x64/extensions/muhammadelashri
+RUN mkdir /home/openvscode-server/extensions/muhammadelashri
 
 #unzip (add one per each)
-RUN unzip /home/muhammadelashri.FHiCL-0.0.4.vsix "extension/*" -d /home/openvscode-server-nightly-v1.61.0-linux-x64/extensions/muhammadelashri/
+RUN unzip /home/muhammadelashri.FHiCL-0.0.4.vsix "extension/*" -d /home/openvscode-server/extensions/muhammadelashri/
 
 USER openvscode-server
