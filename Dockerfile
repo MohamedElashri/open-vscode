@@ -1,4 +1,4 @@
-FROM gitpod/openvscode-server:nightly
+FROM melashri/openvscode-server:latest
 
 USER root
 
