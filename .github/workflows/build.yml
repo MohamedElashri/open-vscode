@@ -1,19 +1,14 @@
 name: Build melashri/gitpod & Push to Dockerhub
 
-on:
-  workflow_dispatch:
+on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-      name: Check out code
-
-    - uses: mr-smithers-excellent/docker-build-push@v5
-      name: Build & push Docker image
+    - uses: actions/checkout@master
+    - name: Publish to Registry
+      uses: HurricanKai/Publish-Docker-Github-Action@master
       with:
-        image: melashri/gitpod
-        registry: docker.io
-        dockerfile: Dockerfile
+        name: melashri/gitpod
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
