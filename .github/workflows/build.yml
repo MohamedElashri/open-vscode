@@ -1,4 +1,4 @@
-name: Build pandoc-nbconvert-docker & Push to Dockerhub
+name: Build vscode-gitpod & Push to Dockerhub
 
 on:
   push:
