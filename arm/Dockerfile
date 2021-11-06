@@ -13,7 +13,7 @@ RUN git clone https://github.com/gitpod-io/openvscode-server && \
     git checkout openvscode-server-v1.61.0 && \
     yarn && yarn gulp server-min
 
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 ARG USERNAME=openvscode-server
 ARG USER_UID=1000
