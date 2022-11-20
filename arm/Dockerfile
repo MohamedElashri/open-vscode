@@ -1,5 +1,5 @@
 
-FROM node:14
+FROM node:19
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         xvfb x11vnc fluxbox dbus-x11 x11-utils x11-xserver-utils xdg-utils \
